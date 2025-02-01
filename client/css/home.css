@@ -312,6 +312,23 @@ header.nav {
       color: var(--brand);
     }
   }
+
+  .navigation ul li:last-child {
+    margin-left: 10px;
+  }
+
+  .navigation ul li:last-child button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .navigation ul li:last-child button:hover {
+    background-color: #555;
+  }
 }
 
 header.nav.scrolled {
