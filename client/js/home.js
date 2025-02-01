@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
-  // const logoSVG = document.getElementById("logo");
-  // const logoSVGPath = document.querySelector(".cls-1");
-  // logoSVGPath.addEventListener("animationend", () => {
-  //   logoSVG.classList.remove("animate");
-  //   setTimeout(() => {
-  //     logoSVG.classList.add("animate");
-  //   }, 5000);
-  // });
+  reduceMotion();
+  slider();
+  fadeUp();
+  navScroll();
+  contactForm();
+});
 
+function slider() {
   const sliders = document.querySelectorAll(".slider");
 
   sliders.forEach((slider) => {
@@ -20,7 +19,29 @@ document.addEventListener("DOMContentLoaded", () => {
     };
     cloneSlides();
   });
+}
 
+function fadeUp() {
+  const fadeUpSections = document.querySelectorAll(".fadeUp");
+
+  const checkVisibility = () => {
+    fadeUpSections.forEach((section) => {
+      const rect = section.getBoundingClientRect();
+      if (
+        rect.top < window.innerHeight * 0.8 &&
+        !section.classList.contains("visible")
+      ) {
+        section.classList.add("visible");
+      }
+    });
+  };
+
+  // Check visibility on scroll and page load
+  window.addEventListener("scroll", checkVisibility);
+  window.addEventListener("load", checkVisibility);
+}
+
+function reduceMotion() {
   const mediaQuery = matchMedia("(prefers-reduced-motion)");
   const checkReducedMotion = () => {
     const video = document.querySelectorAll(".bg-video");
@@ -32,7 +53,9 @@ document.addEventListener("DOMContentLoaded", () => {
   };
   checkReducedMotion();
   mediaQuery.addEventListener("change", checkReducedMotion);
+}
 
+function timeline() {
   const line = document.querySelector(".timeline-innerline");
 
   let i = 0;
@@ -44,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function showTime(e) {
     e.setAttribute("done", "true");
-    e.querySelector(".timeline-point").style.background = "blue";
+    e.querySelector(".timeline-point").style.background = "rgb(74, 58, 255)";
     e.querySelector(".date").style.opacity = "100%";
     e.querySelector("p").style.opacity = "100%";
     e.querySelector("p").style.transform = "translateY(0px)";
@@ -139,4 +162,50 @@ document.addEventListener("DOMContentLoaded", () => {
     i = 0;
     slowLoop();
   }
-});
+}
+
+function navScroll() {
+  document.addEventListener("scroll", function () {
+    const header = document.querySelector("header.nav");
+    if (window.scrollY > 0) {
+      header.classList.add("scrolled");
+    } else {
+      header.classList.remove("scrolled");
+    }
+  });
+}
+
+function contactForm() {
+  document
+    .getElementById("contactForm")
+    .addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const formData = new FormData(this);
+      const data = {
+        name: formData.get("name"),
+        email: formData.get("email"),
+        subject: formData.get("subject"),
+        message: formData.get("message"),
+      };
+
+      fetch("https://imagecolorpicker.com/", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      })
+        .then((response) => response.json())
+        .then((data) => {
+          console.log("Success:", data);
+          alert("Message sent successfully!");
+          // Clear the input fields
+          document.getElementById("contactForm").reset();
+        })
+        .catch((error) => {
+          console.error("Error:", error);
+          alert("There was an error sending your message.");
+        });
+    });
+}

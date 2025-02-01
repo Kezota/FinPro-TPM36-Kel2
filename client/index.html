@@ -3,9 +3,701 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TPM Final Project</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="icon"
+      href="./assets/logo/technoscapeLogo.svg"
+      type="image/png"
+    />
+
+    <link rel="stylesheet" href="./css/home.css" />
+    <title>Hackathon | TechnoScape 2025</title>
+    <script src="./js/home.js"></script>
   </head>
   <body>
-    <h1>Hello World 2</h1>
+    <header class="nav">
+      <div class="content">
+        <h1>
+          <a href="/client">
+            <img src="./assets/logo/technoscapeLogo.svg" alt="" />
+          </a>
+        </h1>
+        <nav class="navigation" role="navigation" aria-label="Main Navigation">
+          <ul>
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#juryMentor">Jury & Mentor</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#prizes">Prizes</a></li>
+            <li><a href="#sponsorMedpar">Sponsor & MedPar</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero-inner">
+        <div class="back-video">
+          <video
+            class="bg-video"
+            src="./assets/video/heroVideo.mp4"
+            muted
+            loop
+            alt=""
+          ></video>
+        </div>
+        <div class="front-video">
+          <video
+            src="./assets/video/heroVideo.mp4"
+            muted
+            class="bg-video"
+            loop
+            alt=""
+          ></video>
+        </div>
+        <div class="content">
+          <div class="content-inner">
+            <h2 class="first">Hackathon</h2>
+            <h3 class="second">
+              Future Forward: Exploring the Digital Horizon
+            </h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about fadeUp" id="about">
+      <h2>About Hackathon</h2>
+      <p>
+        Hackathon is the peak event of TechnoScape that forms a 36-hour coding
+        competition. It challenges participants to create innovative
+        applications or websites to solve real-world problems. Participants will
+        have the opportunity to get insights from mentors in the business,
+        technology, and design mentoring sessions.
+      </p>
+      <a
+        href="https://drive.google.com/file/d/1pek9JMPvDaEhAl6UcfSpHH3lG8JQXjzz/view"
+        target="_blank"
+        >View Guide Book</a
+      >
+    </section>
+
+    <section class="services" id="services">
+      <div class="video">
+        <video
+          loop
+          muted
+          class="bg-video"
+          src="./assets/video/servicesVideo.mp4"
+        ></video>
+      </div>
+      <div class="content">
+        <h2>Why you should join?</h2>
+
+        <div class="cards">
+          <div class="cards-grid">
+            <div class="card">
+              <div class="card-inner">
+                <div class="left">
+                  <h3>Mentoring</h3>
+                  <p>
+                    Peserta mendapatkan kesempatan melakukan mentoring bisnis,
+                    desain, dan teknologi langsung dari orang-orang yang
+                    berpengalaman di bidang IT yang akan memberikan masukan
+                    tentang proyek peserta.
+                  </p>
+                  <!-- <button>Explore More</button> -->
+                </div>
+                <div class="right">
+                  <img src="assets/logo/mentoring.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="left">
+                  <h3>Networking</h3>
+                  <p>
+                    Peserta mendapatkan kesempatan untuk terkoneksi secara
+                    offline / online dengan peserta lain, mentor, dan juri
+                    Hackathon.
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="assets/logo/networking.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="left">
+                  <h3>Hardskill</h3>
+                  <p>
+                    Dengan semua fasilitas yang ditawarkan oleh Hackathon,
+                    peserta akan memiliki kesempatan untuk mengembangkan
+                    keterampilan mereka dengan sesi mentoring.
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="assets/logo/hardskill.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-inner">
+                <div class="left">
+                  <h3>Portofolio</h3>
+                  <p>
+                    Hackathon dapat meningkatkan CV untuk para peserta karena
+                    telah menyelesaikan case study yang diberikan pada
+                    perlombaan ini.
+                  </p>
+                </div>
+                <div class="right">
+                  <img src="assets/logo/portofolio.svg" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="jury fadeUp" id="juryMentor">
+      <h2>Jury</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="./assets/image/profile1.jpg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile2.jpg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile3.jpg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="mentors fadeUp">
+      <h2>Mentors</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="assets/image/brand1.png" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile5.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile6.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile7.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile8.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile9.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile10.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile11.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+        <div class="card">
+          <img src="./assets/image/profile12.jpeg" class="photo" />
+          <h3>John Doe</h3>
+          <a href="https://www.linkedin.com/"
+            ><img
+              src="assets/logo/linkedinLogo.svg"
+              alt="LinkedIn"
+              class="linkedin-logo"
+            />
+            LinkedIn</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="timeline-wrapper" id="timeline">
+      <h2>Timeline</h2>
+      <div class="timeline">
+        <div class="timeline-line">
+          <span class="timeline-innerline"></span>
+        </div>
+
+        <ul>
+          <li>
+            <span class="timeline-point"></span>
+            <span class="date">30 May</span>
+            <p>Open Registration</p>
+          </li>
+          <li>
+            <span class="timeline-point"></span>
+            <span class="date">11 June</span>
+            <p>Close Registration</p>
+          </li>
+          <li>
+            <span class="timeline-point"></span>
+            <span class="date">12 June</span>
+            <p>Technical Meeting</p>
+          </li>
+          <li>
+            <span class="timeline-point"></span>
+            <span class="date">14-16 June</span>
+            <p>Competition Day!</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="prizes" id="prizes">
+      <h2 class="prizes-title">Champion Prize</h2>
+
+      <ul class="prizes-firstTable">
+        <li class="prizes-firstTable_table fadeUp">
+          <h1 class="prizes-firstTable_table__header">
+            <img src="./assets/image/juara2.png" alt="" />
+          </h1>
+          <p class="prizes-firstTable_table__pricing">2nd Winner</p>
+          <ul class="prizes-firstTable_table__options">
+            <li>Rp2x,xxx,xxx</li>
+            <li>Merchandise</li>
+            <li>Certificate</li>
+          </ul>
+        </li>
+        <li class="prizes-firstTable_table fadeUp">
+          <h1 class="prizes-firstTable_table__header">
+            <img src="./assets/image/juara1.png" alt="" />
+          </h1>
+          <p class="prizes-firstTable_table__pricing">1st Winner</p>
+          <ul class="prizes-firstTable_table__options">
+            <li>Rp4x,xxx,xxx</li>
+            <li>Merchandise</li>
+            <li>Certificate</li>
+          </ul>
+        </li>
+        <li class="prizes-firstTable_table fadeUp">
+          <h1 class="prizes-firstTable_table__header">
+            <img src="./assets/image/juara3.png" alt="" />
+          </h1>
+          <p class="prizes-firstTable_table__pricing">3rd Winner</p>
+          <ul class="prizes-firstTable_table__options">
+            <li>Rp1x,xxx,xxx</li>
+            <li>Merchandise</li>
+            <li>Certificate</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="sponsors" id="sponsorMedpar">
+      <!-- Platinum Sponsors -->
+      <div class="sponsor-type platinum fadeUp">
+        <h2>Platinum Sponsors</h2>
+        <div class="sponsor-logos">
+          <img src="assets/image/brand1.png" alt="Platinum Sponsor" />
+          <img src="assets/image/brand2.jpg" alt="Platinum Sponsor" />
+        </div>
+      </div>
+
+      <!-- Gold Sponsors -->
+      <div class="sponsor-type gold fadeUp">
+        <h2>Gold Sponsors</h2>
+        <div class="sponsor-logos">
+          <img src="assets/image/brand3.jpg" alt="Gold Sponsor" />
+          <img src="assets/image/brand4.png" alt="Gold Sponsor" />
+          <img src="assets/image/brand5.png" alt="Gold Sponsor" />
+        </div>
+      </div>
+
+      <!-- Silver Sponsors -->
+      <div class="sponsor-type silver fadeUp">
+        <h2>Silver Sponsors</h2>
+        <div class="sponsor-logos">
+          <img src="assets/image/brand6.png" alt="Silver Sponsor" />
+          <img src="assets/image/brand7.png" alt="Silver Sponsor" />
+          <img src="assets/image/brand8.png" alt="Silver Sponsor" />
+          <img src="assets/image/brand9.png" alt="Silver Sponsor" />
+          <img src="assets/image/brand10.png" alt="Silver Sponsor" />
+        </div>
+      </div>
+    </section>
+
+    <section class="media-partners">
+      <h2>Media Partners</h2>
+      <!-- Column 1 (Left to Right) -->
+      <div class="medpar-column">
+        <div class="slider slider-right">
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <!-- Duplicate slides for seamless looping -->
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+        </div>
+      </div>
+
+      <!-- Column 2 (Right to Left) -->
+      <div class="medpar-column">
+        <div class="slider slider-left">
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <!-- Duplicate slides for seamless looping -->
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+          <div class="slide">
+            <img src="assets/image/medpar.png" alt="MedPar 1" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section class="faq">
+      <h2>FAQ</h2>
+      <section class="accordion" id="overview">
+        <h1 class="title"><a href="#overview">Overview</a></h1>
+        <div class="content">
+          <div class="wrapper">
+            <p>
+              This CodePen demonstrates how we can animate the opening and
+              closing states of an accordion with fancy reveal animation using
+              only CSS. This concept is suitable for creating
+              <strong>FAQ sections</strong>, <strong>Table of Contents</strong>,
+              and more.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion" id="how-does-it-work">
+        <h1 class="title"><a href="#how-does-it-work">How does it work?</a></h1>
+        <div class="content">
+          <div class="wrapper">
+            <p>
+              We cannot transition height or any CSS property from zero to auto.
+              If we want to smoothly expand a collapsed accordion, we could set
+              a
+              <code>max-height</code> and transition the
+              <code>height</code> property to a large value when we expand the
+              section. However,
+              <a
+                href="https://css-tricks.com/using-css-transitions-auto-dimensions/#aa-there-are-two-crucial-downsides-to-this"
+                target="_blank"
+                >it may not properly work</a
+              >
+              if the content is larger than the <code>max-height</code>.
+            </p>
+            <p>
+              So, here we create a CSS grid with a grid item. Then we transition
+              the
+              <code>grid-template-rows</code> property from <code>0fr</code> to
+              <code>1fr</code> and the grid item transitions to its content
+              height.
+            </p>
+            <p>
+              I used CSS <code>clip-path</code> and
+              <code>mix-blend-mode</code> to animate the background and text
+              color of the accordion. Each accordion has two pseudo-elements. We
+              know that <code>opacity</code>, <code>clip-path</code> and,
+              <code>visibility</code> are animatable CSS properties. So when the
+              accordion is selected using the <code>:target</code> pseudo-class,
+              we transition the clip-path circle radius to 200% of the
+              <code>::before</code>
+              pseudo-element. When the accordion is not selected, we do the same
+              with the
+              <code>::after</code> but this time with a delay. This creates an
+              illusion as it appears to clip from inside.
+            </p>
+            <p>
+              Since the accordion's title is an anchor element, users can also
+              navigate through the items with their keyboard.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="accordion" id="inspiration">
+        <h1 class="title"><a href="#inspiration">Inspiration</a></h1>
+        <div class="content">
+          <div class="wrapper">
+            <p>
+              In a recent video, Kevin showed us a way to animate height from
+              zero to auto value. Seeing that, I couldn't resist experimenting
+              with the idea. Then I came up with this CSS-only accordion
+              component and added the reveal animation too!
+            </p>
+            <p>
+              I would highly recommend watching
+              <a href="https://youtu.be/B_n4YONte5A" target="_blank"
+                >his video</a
+              >, where he beautifully explains the technique and points out how
+              he discovered it. Also, read
+              <a
+                href="https://keithjgrant.com/posts/2023/04/transitioning-to-height-auto/"
+                target="_blank"
+                >Keith J. Grant's post</a
+              >
+              and
+              <a
+                href="https://nemzes.net/posts/animating-height-auto/"
+                target="_blank"
+                >Nelson Menezes's post</a
+              >
+              on the same topic.
+            </p>
+          </div>
+        </div>
+      </section>
+    </section> -->
+
+    <section class="contact" id="contact">
+      <div class="arch_contact_us_duplicate">
+        <div class="responsive-container-block big-container">
+          <div class="responsive-container-block container">
+            <div
+              class="responsive-cell-block wk-mobile-12 wk-desk-5 wk-tab-10 wk-ipadp-5"
+              id="ih6s"
+            >
+              <p class="text-blk section-head">Got any questions?</p>
+              <p class="text-blk section-subhead">
+                Feel free to reach out to us anytime. We're here to help and
+                answer any questions you might have.
+              </p>
+            </div>
+            <div
+              class="responsive-cell-block wk-ipadp-6 wk-mobile-12 wk-desk-5 wk-tab-9"
+              id="i6df"
+            >
+              <form class="form-wrapper" id="contactForm">
+                <input
+                  class="input input-element"
+                  name="name"
+                  placeholder="Name"
+                  required
+                />
+                <input
+                  class="input input-element"
+                  name="email"
+                  placeholder="Email"
+                  type="email"
+                  required
+                />
+                <input
+                  class="input input-element"
+                  name="subject"
+                  placeholder="Subject"
+                  required
+                />
+                <textarea
+                  class="textinput input-element"
+                  name="message"
+                  placeholder="Message"
+                  required
+                ></textarea>
+                <button class="button" type="submit">Send</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="logo">
+        <!-- inline -->
+        <img src="assets/logo/technoscapeLogo.svg" alt="" />
+        <h3>TechnoScape 2025</h3>
+      </div>
+
+      <div class="socials">
+        <a
+          href="https://www.instagram.com/technoscapebncc?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+        >
+          <img src="./assets/logo/instagramLogo.svg" alt="Instagram" />
+        </a>
+        <a
+          href="https://www.linkedin.com/company/bnccbinus/posts/?feedView=all"
+          target="_blank"
+        >
+          <img src="./assets/logo/linkedinLogo.svg" alt="LinkedIn" />
+        </a>
+        <a
+          href="https://www.facebook.com/bina.nusantara.computer.club/"
+          target="_blank"
+        >
+          <img src="./assets/logo/facebookLogo.svg" alt="Facebook" />
+        </a>
+        <a href="https://twitter.com/bnccbinus" target="_blank">
+          <img src="./assets/logo/xLogo.svg" alt="X" />
+        </a>
+        <a href="https://bncc.net/" target="_blank">
+          <img src="./assets/logo/websiteLogo.svg" alt="Website" />
+        </a>
+      </div>
+
+      <p class="copyright">
+        Copyright © 2025 Bina Nusantara Computer Club (BNCC). All rights
+        reserved.
+      </p>
+    </footer>
+
+    <script src="./script.js"></script>
   </body>
 </html>
