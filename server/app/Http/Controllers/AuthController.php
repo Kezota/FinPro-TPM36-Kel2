@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Team;
 use Illuminate\Http\Request;
 use Illumminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Auth;
@@ -27,7 +27,7 @@ class AuthController extends Controller
     public function Login(Request $request){
         try{
             $request -> validate([
-                'team' =>'required',
+                'team_name' =>'required',
                 'password'=> 'required'
             ]);
             if (Auth::attempt(credentials: $request->only('team', 'password'))){
