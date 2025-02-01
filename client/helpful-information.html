@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register - Hackathon | TechnoScape 2025</title>
+    <link rel="stylesheet" href="css/helpful-information.css" />
+    <link
+      rel="icon"
+      href="./assets/logo/technoscapeLogo.svg"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <div class="decor">
+      <img
+        src="login elements/backgound decor 1.png"
+        alt="Decor 1"
+        class="decor decor1"
+      />
+      <img
+        src="login elements/backgound decor 2.png"
+        alt="Decor 2"
+        class="decor decor2"
+      />
+    </div>
+
+    <header class="header">
+      <div class="logo">
+        <img src="login elements/Logo BNCC.png" alt="BNCC Logo" />
+      </div>
+    </header>
+
+    <div class="container">
+      <img
+        src="register elements/Register logo.png"
+        alt="Register Logo"
+        class="logo"
+      />
+
+      <form id="RegisterForm">
+        <div class="register-group">
+          <label>Full Name</label>
+          <input
+            type="text"
+            id="FullName"
+            placeholder="Enter Full Name"
+            required
+          />
+
+          <div class="type-box">
+            <label class="upload-label">Email</label>
+            <div class="type-wrapper">
+              <input
+                type="email"
+                id="Email-box"
+                placeholder="Enter Email"
+                required
+              />
+              <img
+                class="info-icon"
+                src="register elements/Info icon.png"
+                alt="Info"
+                id="i-Email"
+              />
+            </div>
+          </div>
+
+          <div class="type-box">
+            <label class="upload-label">WhatsApp Number</label>
+            <div class="type-wrapper">
+              <input
+                type="text"
+                id="WhatsApp-box"
+                placeholder="Enter WhatsApp Number"
+                required
+              />
+              <img
+                class="info-icon"
+                src="register elements/Info icon.png"
+                alt="Info"
+                id="i-Number"
+              />
+            </div>
+          </div>
+
+          <div class="type-box">
+            <label class="upload-label">Line ID</label>
+            <div class="type-wrapper">
+              <input
+                type="text"
+                id="Line"
+                placeholder="Enter Line ID"
+                required
+              />
+              <img
+                class="info-icon"
+                src="register elements/Info icon.png"
+                alt="Info"
+                id="i-Line"
+              />
+            </div>
+          </div>
+
+          <label>Github / Gitlab ID</label>
+          <input
+            type="text"
+            id="Github"
+            placeholder="Enter Github / Gitlab ID"
+            required
+          />
+
+          <div class="type-box">
+            <label for="city" class="upload-label">Birthplace</label>
+            <div class="type-wrapper">
+              <select id="city" name="city">
+                <option value="">Birthplace</option>
+                <option value="Jakarta">Jakarta</option>
+                <option value="Surabaya">Surabaya</option>
+                <option value="Bandung">Bandung</option>
+                <option value="Medan">Medan</option>
+                <option value="Semarang">Semarang</option>
+                <option value="Makassar">Makassar</option>
+                <option value="Palembang">Palembang</option>
+                <option value="Depok">Depok</option>
+                <option value="Tangerang">Tangerang</option>
+                <option value="Bekasi">Bekasi</option>
+                <option value="Yogyakarta">Yogyakarta</option>
+                <option value="Malang">Malang</option>
+                <option value="Pekanbaru">Pekanbaru</option>
+                <option value="Denpasar">Denpasar</option>
+                <option value="Samarinda">Samarinda</option>
+                <option value="Manado">Manado</option>
+                <option value="Batam">Batam</option>
+                <option value="Pontianak">Pontianak</option>
+                <option value="Balikpapan">Balikpapan</option>
+                <option value="Banjarmasin">Banjarmasin</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="type-box">
+            <label>Birthdate</label>
+            <div class="type-wrapper">
+              <input
+                type="date"
+                id="Birthdate"
+                placeholder="Enter Birthdate"
+                required
+              />
+              <img
+                class="info-icon"
+                src="register elements/Info icon.png"
+                alt="Info"
+                id="i-birthdate"
+              />
+            </div>
+          </div>
+
+          <div id="Email-requirements" class="hidden">
+            <ul>
+              <li id="Email">
+                Email yang diinput harus lengkap dan mengandung "@"
+                <span style="color: red">*</span>
+              </li>
+              <li id="Email">
+                Nomor Whatsapp Nya harus unik <span style="color: red">*</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="WhatsApp-requirements" class="hidden">
+            <ul>
+              <li id="WhatsApp">Minimal Panjangnya 9</li>
+              <li id="WhatsApp">Nomornya harus unik</li>
+            </ul>
+          </div>
+
+          <div id="Line-requirements" class="hidden">
+            <ul>
+              <li id="Line">
+                Line ID nya harus unik <span style="color: red">*</span>
+              </li>
+            </ul>
+          </div>
+
+          <div id="Birthdate-requirements" class="hidden">
+            <ul>
+              <li id="Birthdate">
+                Umur peserta minimal 17 tahun <span style="color: red">*</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="upload-container">
+          <label class="upload-label">CV</label>
+          <div class="upload-wrapper">
+            <label for="cv-upload" class="upload-box">
+              <img
+                src="register elements/upload.png"
+                alt="Upload"
+                class="upload-icon"
+              />
+              <span class="upload-text">Upload Media</span>
+            </label>
+            <input type="file" id="cv-upload" class="file-input" />
+            <img
+              class="info-icon"
+              src="register elements/Info icon.png"
+              alt="Info"
+              id="i-CV"
+            />
+          </div>
+        </div>
+
+        <div class="upload-container">
+          <label class="upload-label">Flazz Card</label>
+          <div class="upload-wrapper">
+            <label for="flazz-upload" class="upload-box">
+              <img
+                src="register elements/upload.png"
+                alt="Upload"
+                class="upload-icon"
+              />
+              <span class="upload-text">Upload Media</span>
+            </label>
+            <input type="file" id="flazz-upload" class="file-input" />
+            <img
+              class="info-icon"
+              src="register elements/Info icon.png"
+              alt="Info"
+              id="i-FlazzCard"
+            />
+          </div>
+        </div>
+
+        <div class="upload-container">
+          <label class="upload-label">ID Card</label>
+          <div class="upload-wrapper">
+            <label for="id-upload" class="upload-box">
+              <img
+                src="register elements/upload.png"
+                alt="Upload"
+                class="upload-icon"
+              />
+              <span class="upload-text">Upload Media</span>
+            </label>
+            <input type="file" id="id-upload" class="file-input" />
+            <img
+              class="info-icon"
+              src="register elements/Info icon.png"
+              alt="Info"
+              id="i-ID"
+            />
+          </div>
+        </div>
+
+        <div id="CV-requirements" class="hidden">
+          <ul>
+            <li id="cv">
+              Format file pdf, jpg, jpeg dan png
+              <span style="color: red">*</span>
+            </li>
+          </ul>
+        </div>
+
+        <div id="FlazzCard-requirements" class="hidden">
+          <ul>
+            <li id="FlazzCard">
+              Format file pdf, jpg, jpeg dan png
+              <span style="color: red">*</span>
+            </li>
+          </ul>
+        </div>
+
+        <div id="ID-requirements" class="hidden">
+          <ul>
+            <li id="ID">
+              Format file pdf, jpg, jpeg dan png
+              <span style="color: red">*</span>
+            </li>
+          </ul>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit</button>
+      </form>
+    </div>
+
+    <script src="js/helpful-information.js"></script>
+  </body>
+</html>

@@ -1,11 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/login.css" />
+
+    <link
+      rel="icon"
+      href="./assets/logo/technoscapeLogo.svg"
+      type="image/png"
+    />
+    <title>Login - Hackathon | TechnoScape 2025</title>
+  </head>
+  <body>
+    <div class="decor">
+      <img
+        src="assets/login elements/backgound decor 1.png"
+        alt="Decor 1"
+        class="decor decor1"
+      />
+      <img
+        src="assets/login elements/backgound decor 2.png"
+        alt="Decor 2"
+        class="decor decor2"
+      />
+    </div>
+    <header class="header">
+      <a class="logo" href="index.html">
+        <img src="assets/login elements/Logo BNCC.png" alt="BNCC Logo" />
+      </a>
+    </header>
+    <div class="container">
+      <div class="login-box">
+        <div class="login-icon">
+          <img src="assets/login elements/log in logo.png" alt="Login" />
+        </div>
+        <p class="login-text">
+          Log in to Your Hackathon Team Now and Unleash Your Innovation!
+        </p>
+
+        <form id="loginForm">
+          <div class="input-group">
+            <label for="teamName"
+              ><img src="assets/login elements/Team name.png" alt="Team" />
+            </label>
+            <input
+              type="text"
+              id="teamName"
+              placeholder="Enter your Team name *"
+              required
+            />
+          </div>
+          <div class="input-group">
+            <label for="password"
+              ><img src="assets/login elements/password.png" alt="Password" />
+            </label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password *"
+              required
+            />
+            <img
+              src="assets/login elements/eye.png"
+              alt="Show Password"
+              id="togglePassword"
+              class="eye-icon"
+            />
+          </div>
+          <a href="#" class="forgot-password">Forgot password?</a>
+          <button type="submit" class="login-btn">Get Started</button>
+          <img
+            src="assets/login elements/sign in with.png"
+            alt="sign in with"
+            class="signin-text"
+          />
+        </form>
+
+        <p class="signup-text">
+          Don't have an account? <a href="Register.html">Sign up</a>
+        </p>
+      </div>
+    </div>
+
+    <script src="js/login.js"></script>
+
+    <div id="loadingOverlay">
+      <img
+        src="assets/login elements/loading.png"
+        alt="Loading..."
+        class="loading-image"
+      />
+    </div>
+  </body>
 </html>
