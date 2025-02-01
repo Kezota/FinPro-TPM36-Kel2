@@ -4,8 +4,49 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    <div class="decor">
+        <img src="login elements/backgound decor 1.png" alt="Decor 1" class="decor decor1">
+        <img src="login elements/backgound decor 2.png" alt="Decor 2" class="decor decor2">
+    </div>
+    <header class="header">
+        <div class="logo">
+            <img src="login elements/Logo BNCC.png" alt="BNCC Logo">
+        </div>
+    </header>
+    <div class="container">
+        <div class="login-box">
+            <div class="login-icon">
+                <img src="login elements/log in logo.png" alt="Login">
+            </div>
+            <p class="login-text">Log in to Your Hackathon Team Now and Unleash Your Innovation!</p>
+
+            <form id="loginForm">
+                <div class="input-group">
+                    <label for="teamName"><img src="login elements/Team name.png" alt="Team"> </label>
+                    <input type="text" id="teamName" placeholder="Enter your Team name *" required>
+                </div> 
+                <div class="input-group">
+                    <label for="password"><img src="login elements/password.png" alt="Password"> </label>
+                    <input type="password" id="password" placeholder="Enter your password *" required>
+                    <img src="login elements/eye.png" alt="Show Password" id="togglePassword" class="eye-icon">
+                </div>
+                <a href="#" class="forgot-password">Forgot password?</a>
+                <button type="submit" class="login-btn">Get Started</button>
+                <img src="login elements/sign in with.png" alt="sign in with" class="signin-text">
+            </form>
+
+            <p class="signup-text">Don't have an account? <a href="#">Sign up</a></p>
+        </div>
+    </div>
+
+    <script src="login.js"></script>
+
+    <div id="loadingOverlay">
+        <img src="login elements/loading.png" alt="Loading..." class="loading-image">
+    </div>
     
 </body>
 </html>
