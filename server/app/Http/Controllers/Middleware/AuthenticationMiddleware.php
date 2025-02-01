@@ -21,5 +21,11 @@ class AuthenticationMiddleware
         }else{
             return redirect()->route("register");
         }
+
+        if (Auth::check() && Auth::user()->role === 'admin') {
+            return $next($request);
+        }else{
+            return redirect()->route("login")->withErrors("error", "you are not admin");
+        }
     }
 }
