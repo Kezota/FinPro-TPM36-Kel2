@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="Assets/logo.png" alt="TechnoScape Logo" class="ts-logo">
+        <button class="logout-btn">Logout</button>
+    </div>
+    <div class="popup-overlay" id="logoutPopup">
+        <div class="popup-box">
+            <h2>Apakah Anda Yakin Ingin Logout?</h2>
+            <div class="popup-buttons">
+                <button class="confirm-btn" onclick="confirmLogout()">Ya</button>
+                <button class="cancel-btn" onclick="closePopup()">Tidak</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="page" style="padding: 200px 0;">
+            <div class="teamname">
+                <p>Your Team Name</p>
+                <div class="teamname-box">Team Name</div>
+            </div>
+            <div class="leader-data-container" style="margin-top: 126px;">
+                <div class="leader-data-box">
+                    <p>Leader Data</p>
+                    <div class="leader-data-box-content">
+                        <div class="leader-data-left" style="font-weight: 700; display: flex; flex-direction: column; gap: 15px;">
+                            <p>Full Name :</p>
+                            <p>Email :</p>
+                            <p>Whatsapp Number :</p>
+                            <p>Line Id :</p>
+                            <p>Github/Gitlab Id :</p>
+                            <p>Birth place :</p>
+                            <p>Birth date :</p>
+                        </div>
+                        <div class="leader-data-right" style="font-weight: 400; display: flex; flex-direction: column; gap: 15px;">
+                            <p>Leader Full Name</p>
+                            <p>Email@gmail.com</p>
+                            <p>081234567890</p>
+                            <p>1234567890</p>
+                            <p>129087654321</p>
+                            <p>Jakarta</p>
+                            <p>22 December 2005</p>
+                        </div>
+                    </div>
+                    <div class="view-buttons">
+                        <button class="view-cv" onclick="viewDocument('cv')">View CV</button>
+                        <button class="view-id" onclick="viewDocument('id')">View Id / Flazz Card</button>
+                    </div>
+                </div>
+            </div>
+            <div class="timeline-container" style="margin-top: 167.82px; margin-bottom: 36.95px;">
+                <p style="margin-bottom: 36.95px;">Timeline</p>
+                <div class="timeline-left">
+                    <div class="content" style="background-image: url('Assets/time_decor1.png');">  
+                        <h2>Open Registration</h2>
+                        <h3>20 - 22 December</h3>
+                        <p>Sign up now and secure your spot in the competition! Don’t miss this chance to join the challenge.</p>
+                    </div>
+                </div>
+                <div class="timeline-right">
+                    <div class="content" style="background-image: url('Assets/time_decor2.png');">
+                        <h2>Close Registration</h2>
+                        <h3>23 December</h3>
+                        <p>Registration closes on 23 December 2024. Make sure to submit your application before this date.</p>
+                    </div>
+                </div>
+                <div class="timeline-left">
+                    <div class="content" style="background-image: url('Assets/time_decor3.png');">
+                        <h2>Technical Meeting</h2>
+                        <h3>25 December</h3>
+                        <p>All participants must attend the Technical Meeting to review important guidelines before the competition.</p>
+                    </div>
+                </div>
+                <div class="timeline-right">
+                    <div class="content" style="background-image: url('Assets/time_decor4.png');">
+                        <h2>Competition Day</h2>
+                        <h3>25 December</h3>
+                        <p>The challenge is on! Participants will compete for the top spot—may the best win!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-container">
+                <p style="margin-bottom: 31.01px;">Contact Person</p>
+                <div class="contact-box">
+                    <div class="contact">
+                        <img class="contact-img" src="Assets/photo1.png">
+                        <div class="contact-content">
+                            <div class="contact-name" style="gap: 12.28px;">
+                                <img src="Assets/profile_icon.png" alt="contact-name">
+                                <p>John Doe</p>
+                            </div>
+                            <div class="contact-line" style="gap: 9.21px;">
+                                <img src="Assets/line_icon.png" alt="contact-line">
+                                <p>2309230203932</p>
+                            </div>
+                            <div class="contact-wa" style="gap: 9.98px;">
+                                <img src="Assets/wa_icon.png" alt="contact-wa">
+                                <p>082200822</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact">
+                        <img class="contact-img" src="Assets/photo2.png">
+                        <div class="contact-content">
+                            <div class="contact-name" style="gap: 12.28px;">
+                                <img src="Assets/profile_icon.png" alt="contact-name">
+                                <p>Jane Doe</p>
+                            </div>
+                            <div class="contact-line" style="gap: 9.21px;">
+                                <img src="Assets/line_icon.png" alt="contact-line">
+                                <p>2309230203932</p>
+                            </div>
+                            <div class="contact-wa" style="gap: 9.98px;">
+                                <img src="Assets/wa_icon.png" alt="contact-wa">
+                                <p>082200822</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

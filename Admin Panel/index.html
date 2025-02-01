@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Panel</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="navbar">
+        <img src="Assets/logo.png">
+        <div class="buttons">
+            <button class="participants-btn" onclick="showPage('participants-page')">Participants</button>
+            <button class="team-btn" onclick="showPage('team-page')">Team</button>
+            <button class="logout-btn" onclick="confirmLogout()">Logout</button>
+        </div>
+    </div>
+    <div class="container">
+        <!-- Participants Page -->
+        <div id="participants-page" class="page" style="padding-top: 200px; padding-bottom: 200px;">
+            <div class="accordion-container" style="display: flex;">
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>GGgemink</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. Team Member</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Apel</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Fafifu</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Bogor</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Cangcimen</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>DepokPride</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <div class="accordion-header">
+                        <p>Eyaeyaeya</p>
+                        <div class="team-buttons">
+                            <button class="team-details" onclick="toggleAccordion()" id="details">View Team Details</button>
+                            <button class="edit-team" onclick="editPage()" id="edit">Edit Team</button>
+                            <button class="delete-team" onclick="deleteTeam(event)">Delete Team</button>
+                        </div>
+                    </div>
+                    <div id="team-list" class="accordion-content">
+                        <ul>
+                            <li>1. John Doe</li>
+                            <li>2. Jane Smith</li>
+                            <li>3. Mike Johnson</li>
+                            <li>4. Alice Brown</li>
+                            <li>5. Jane Smith</li>
+                            <li>6. Mike Johnson</li>
+                            <li>7. Alice Brown</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team Page -->
+        <div id="team-page" class="page" style="display: none;">
+            <div class="search-container">
+                <div class="search">
+                    <div class="search-box">
+                        <div class="search-content">
+                            <img src="Assets/search_icon.png">
+                            <input type="text" id="search-input" placeholder="Search Team Name" onkeyup="searchTeam()">
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn" onclick="toggleDropdown()">Sort By
+                        <img src="Assets/arrow_down.png" style="width: 16px; height: 10px;">
+                    </button>
+                    <div class="dropdown-content" id="drop">
+                        <button onclick="sortTeams('name-asc')">Team Name (A-Z)</button>
+                        <button onclick="sortTeams('name-desc')">Team Name (Z-A)</button>
+                        <button onclick="sortTeams('date-desc')">Registration Date (Latest)</button>
+                        <button onclick="sortTeams('date-asc')">Registration Date (Earliest)</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Edit Team Page -->
+        <div id="edit-page" class="page" style="display: none;">
+            <div class="edit-container">
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>1. John Doe</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>2. Jane Smith</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>3. Mike Johnson</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>4. Alice Brown</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>5. Jane Smith</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>6. Mike Johnson</p>
+                </button>
+                <button class="edit-member" onclick="formPage(this)">
+                    <p>7. Alice Brown</p>
+                </button>
+            </div>
+        </div>
+        <!-- Edit Form Page -->
+         <div id="form-page" class="page" style="display: none;">
+            <form class="form-container" action="#" method="post" style="padding: 77vh 0;">
+                <div class="form-group">
+                    <label for="fullName">Full Name</label>
+                    <input type="text" id="fullName" name="fullName" placeholder="Enter Full Name" required>
+                  </div>       
+                  <div class="form-group">
+                    <label for="Email">Email</label>
+                    <input type="email" id="Email" name="Email" placeholder="Enter Email" required>
+                  </div>
+                  <div class="form-group">
+                    <label for="waNumber">WhatsApp Number</label>
+                    <input type="number" id="waNumber" name="waNumber" placeholder="Enter WhatsApp Number" required>
+                  </div> 
+                  <div class="form-group">
+                    <label for="lineID">Line ID</label>
+                    <input type="text" id="lineID" name="lineID" placeholder="Enter Line ID">
+                  </div>   
+                  <div class="form-group">
+                    <label for="github">Github / Gitlab ID</label>
+                    <input type="text" id="github" name="github" placeholder="Enter Github / Gitlab ID">
+                  </div>  
+                  <div class="form-group">
+                    <label for="birthplace">Birthplace</label>
+                    <div class="birth-accord-container">
+                        <input type="text" id="birthplace" class="birth-accord" 
+                               placeholder="Select birthplace" 
+                               readonly>
+                        <div id="birth-accord-content"></div>
+                    </div>
+                  </div>  
+                  <div class="form-btn">
+                    <label for="cv">CV</label>
+                    <div class="upload">
+                      <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx" style="display: none;">
+                      <button type="button" onclick="document.getElementById('cv').click()">
+                        <img src="Assets/upload_icon.png">
+                        Upload Media            
+                      </button>
+                      <span id="cv-filename"></span>
+                    </div>
+                  </div>
+                  <div class="form-btn">
+                    <label for="flazzCard">Flazz Card</label>
+                    <div class="upload">
+                      <input type="file" id="flazzCard" name="flazzCard" accept=".jpg,.png,.jpeg,.pdf" style="display: none;">
+                      <button type="button" onclick="document.getElementById('flazzCard').click()">
+                        <img src="Assets/upload_icon.png">
+                        Upload Media                    
+                      </button>
+                      <span id="flazz-filename"></span>
+                    </div>
+                  </div>
+                  <div class="submit-btn">
+                    <button type="submit">Submit</button>
+                  </div>
+            </form>
+         </div>
+    </div>
+</body>
+</html>
