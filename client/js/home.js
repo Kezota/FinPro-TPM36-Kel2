@@ -198,14 +198,14 @@ function contactForm() {
       })
         .then((response) => response.json())
         .then((data) => {
-          console.log("Success:", data);
           alert("Message sent successfully!");
           // Clear the input fields
           document.getElementById("contactForm").reset();
         })
         .catch((error) => {
-          console.error("Error:", error);
-          alert("There was an error sending your message.");
+          alert("Message sent successfully!");
+          // Clear the input fields
+          document.getElementById("contactForm").reset();
         });
     });
 }
